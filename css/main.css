@@ -1,0 +1,104 @@
+/*! Load Fonts */
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif|Josefin+Sans|Josefin+Slab|Merriweather|Oswald|Roboto+Slab");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Caveat+Brush|Cinzel|Gloria+Hallelujah|Indie+Flower|Kaushan+Script|Lobster|Luckiest+Guy|Permanent+Marker|Philosopher|Playfair+Display+SC");
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%; }
+
+h2 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+ul {
+  list-style: none; }
+
+.branding-ad {
+  background: #d14348;
+  text-align: center;
+  margin: 0;
+  color: #eee;
+  width: 100%;
+  height: 3em;
+  padding-top: 3px;
+  font-size: 1.1em;
+  line-height: 2em;
+  position: relative;
+  top: 0;
+  left: 0; }
+
+.brand-logo {
+  padding: 15px 15px 15px 5.4%; }
+
+.close {
+  font-size: 1.7em;
+  padding: 0 10px 0 0;
+  margin: 0;
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.input-group {
+  display: inline-block; }
+  .input-group > input {
+    width: 95%;
+    height: 1.7em; }
+  .input-group > .input-group-btn {
+    margin: 0 -31px;
+    height: 1.6em;
+    border: none;
+    border-left: 1px solid #999; }
+
+.nav-container {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+nav {
+  width: 100%;
+  background-color: #0abbff; }
+  nav .nav-container > ul {
+    display: inline-block;
+    width: 75%;
+    margin: 0;
+    padding: 0 0 0 2%; }
+  nav .nav-container > ul li {
+    display: inline-block;
+    padding: 2px 10px;
+    position: relative;
+    height: 100%;
+    line-height: 3em;
+    font-size: 1.1em;
+    font-weight: 700;
+    font-family: Ariel, sans-serif; }
+    nav .nav-container > ul li a {
+      color: #eee;
+      height: 100%;
+      text-decoration: none; }
+  nav .nav-container > ul li > div {
+    display: none; }
+  nav .nav-container > ul li:hover > div {
+    display: block;
+    width: 50vw;
+    padding: 10px;
+    border: 1px solid #222;
+    background-color: #eee;
+    position: absolute;
+    top: 40px;
+    left: 0; }
+    nav .nav-container > ul li:hover > div h4 {
+      color: #009bd6; }
+    nav .nav-container > ul li:hover > div ul {
+      padding: 0; }
+    nav .nav-container > ul li:hover > div ul li {
+      color: #000;
+      font-size: .8em;
+      display: block; }
+  nav .nav-container > .input-group {
+    width: 20%; }
+
+/*# sourceMappingURL=main.css.map */
