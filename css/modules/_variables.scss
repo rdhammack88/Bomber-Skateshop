@@ -1,0 +1,51 @@
+/*! Load Fonts */
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Josefin+Sans|Josefin+Slab|Merriweather|Oswald|Roboto+Slab');
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Caveat+Brush|Cinzel|Gloria+Hallelujah|Indie+Flower|Kaushan+Script|Lobster|Luckiest+Guy|Permanent+Marker|Philosopher|Playfair+Display+SC');
+
+// Set Colors
+$bloodred: rgba(66,0,0,.7);
+$camo: rgba(66,66,0,.7);
+$offwhite: #eee8d6;
+$darkblue: #022933;
+$yellow: #ffba00;
+$blue: #0076a3;
+$babyblue: #ccffff;
+$green: #548c27;
+$orange: #f39856;
+$red: #d14348;
+$reddish: #994422;
+$purple: #6d73c2;
+$darkgreen: #014348;
+$background-colors-list: #4bc2a5 #606430 #660066 #6648ca #6b6022 #66bb66 #6666bb #2f54e9 #22ff55 #2222ff;
+$border-colors-list: #ff9900 #ffff99 #77ff66 #73c227 #c23e50 #7bafc2 #77bbaa;
+$colors-list: #111 #222 #333 #444 #555;
+
+$background: darken(#00f, 38%); // darkblue;
+$goldenrod: lighten(goldenrod, 20%);
+
+$color-main: $darkblue;
+$color-background: $offwhite;
+$color-headlines: $red;
+$color-backgrounds: $offwhite;
+
+// Font names
+$indieFlower: 'Indie Flower', cursive;
+$lobster: 'Lobster', cursive;
+$gloria: 'Gloria Hallelujah', cursive;
+$amatic:'Amatic SC', cursive;
+$cinzel: 'Cinzel', serif;
+$permanentMarker: 'Permanent Marker', cursive;
+$kaushan: 'Kaushan Script', cursive;
+$philosopher: 'Philosopher', sans-serif;
+$playfair:'Playfair Display SC', serif;
+$caveat: 'Caveat Brush', cursive;
+$luckiestGuy:'Luckiest Guy', cursive;
+
+$font-list: $indieFlower, $lobster, $gloria, $amatic, $cinzel, $permanentMarker, $kaushan, $philosopher, $playfair, $caveat, $luckiestGuy;
+
+$font-main: 'Merriweather', Helvetica, sans-serif;
+$font-highlight: 'Bree Serif', Helvetica, sans-serif;
+$font-header: $kaushan;
+
+$roundness: 20px 0 20px 0;
