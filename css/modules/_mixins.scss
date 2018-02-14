@@ -50,9 +50,8 @@
 	margin-top: $margin;
 	
 	&:nth-child(#{$qty}n-1) {
-		border-left: 1px solid #222;
-		border-right: 1px solid #222;
-		border-width: 2px;
+		border-left: 1px solid #ccc;
+		border-right: 1px solid #ccc;
 	}
 	
 	&:nth-child(n) {
