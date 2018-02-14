@@ -12,7 +12,7 @@ h2 {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding: 15px 15px 15px;
+  padding: 15px 0 15px 7px;
   color: #0abbff; }
 
 ul {
@@ -53,104 +53,138 @@ ul {
   max-width: 1200px;
   margin: 0 auto; }
 
-header .logo-container {
-  float: left;
-  height: 65px;
-  margin-right: 20px; }
-header .promos-container {
-  float: left;
-  height: 65px; }
-  header .promos-container .promo-block {
-    float: left; }
-    header .promos-container .promo-block:nth-of-type(2) {
-      margin-left: 30px;
-      margin-right: 30px; }
-    header .promos-container .promo-block .promo-title {
-      color: #0abbff;
+header {
+  /* Navigation Styles */ }
+  header .logo-promos-container {
+    height: 65px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center; }
+  header .logo-container {
+    float: left;
+    height: 100%;
+    margin-right: 20px; }
+  header .promos-container {
+    float: left;
+    height: 100%; }
+    header .promos-container .promo-block {
+      float: left; }
+      header .promos-container .promo-block:nth-of-type(2) {
+        margin-left: 30px;
+        margin-right: 30px; }
+      header .promos-container .promo-block .promo-title {
+        color: #0abbff;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        text-align: center;
+        font-weight: 600; }
+      header .promos-container .promo-block .promo-text {
+        margin-top: 1px;
+        padding: 0;
+        color: #777;
+        font-size: .8em;
+        text-align: center; }
+  header .cart-account-info {
+    float: left;
+    margin-left: 50px; }
+    header .cart-account-info > ul {
+      padding-left: 0; }
+      header .cart-account-info > ul > li {
+        list-style: none;
+        display: inline-block;
+        color: #0abbff;
+        font-size: 1.1em;
+        padding: 12px 5px; }
+  header nav {
+    width: 100%;
+    height: 65px;
+    background-color: #0abbff;
+    clear: both; }
+    header nav .nav-container > ul {
+      display: inline-block;
+      width: 75%;
+      height: 100%;
+      margin: 0;
+      padding: 0 0 0; }
+    header nav .nav-container > ul li {
+      display: inline-block;
+      padding: 0 10px;
+      position: relative;
+      height: 100%;
       text-transform: uppercase;
-      margin-bottom: 0;
-      text-align: center;
-      font-weight: 600; }
-    header .promos-container .promo-block .promo-text {
-      margin-top: 1px;
-      padding: 0;
-      color: #777;
-      font-size: .8em;
-      text-align: center; }
-
-/* Navigation Styles */
-nav {
-  width: 100%;
-  height: 3em;
-  background-color: #0abbff;
-  clear: both; }
-  nav .nav-container > ul {
-    display: inline-block;
-    width: 75%;
-    height: 100%;
-    margin: 0;
-    padding: 0 0 0; }
-  nav .nav-container > ul li {
-    display: inline-block;
-    padding: 0 10px;
-    position: relative;
-    height: 100%;
-    text-transform: uppercase;
-    font-size: 1em;
-    font-weight: 700; }
-    nav .nav-container > ul li a {
-      color: #eee;
-      text-decoration: none; }
-      nav .nav-container > ul li a > span {
+      font-size: 1em;
+      font-weight: 700; }
+      header nav .nav-container > ul li a {
+        color: #eee;
         height: 100%;
-        padding: 15px 0;
-        display: inline-block;
+        display: table-cell;
         vertical-align: middle;
-        box-sizing: border-box; }
-  nav .nav-container > ul li > div {
-    display: none; }
-  nav .nav-container > ul li:hover > div {
-    display: block;
-    width: 50vw;
-    max-width: "1200/80%";
-    padding: 10px;
-    background-color: #eee;
-    box-shadow: -3px 3px 16px rgba(20, 23, 28, 0.25), 3px 3px 16px rgba(20, 23, 28, 0.25);
-    position: absolute;
-    top: 100%;
-    left: -100%; }
-    nav .nav-container > ul li:hover > div h5 {
-      color: #009bd6;
-      margin: 10px 0 0;
-      line-height: 1.7em; }
-    nav .nav-container > ul li:hover > div ul {
-      padding: 0; }
-    nav .nav-container > ul li:hover > div ul a {
-      color: #000;
-      font-size: .8em;
-      padding: 5px;
-      line-height: 1.7em;
-      display: block; }
-  nav .nav-container > .input-group {
-    display: none; }
-    @media (min-width: 768px) {
-      nav .nav-container > .input-group {
-        display: inline-block;
-        width: 20%; }
-        nav .nav-container > .input-group > input {
-          width: 95%;
-          height: 2.3em; }
-          nav .nav-container > .input-group > input::placeholder {
-            color: #0abbff;
-            font-size: 1.2em; }
-        nav .nav-container > .input-group button.input-group-btn {
-          border: none;
-          display: inline-block;
+        text-decoration: none; }
+        header nav .nav-container > ul li a > span {
           height: 100%;
-          margin: 0 0 0 -40px;
-          background: #fff;
-          font-size: 1.2em;
-          color: #0abbff; } }
+          padding: 15px 0;
+          display: inline-block;
+          vertical-align: middle;
+          box-sizing: border-box; }
+    header nav .nav-container > ul li > div {
+      display: none;
+      z-index: 999; }
+    header nav .nav-container > ul li:hover > div {
+      display: block;
+      width: 50vw;
+      max-width: "1200/80%";
+      padding: 10px;
+      background-color: #eee;
+      box-shadow: -3px 3px 16px rgba(20, 23, 28, 0.25), 3px 3px 16px rgba(20, 23, 28, 0.25);
+      position: absolute;
+      top: 100%;
+      left: -100%; }
+      header nav .nav-container > ul li:hover > div h5 {
+        color: #009bd6;
+        margin: 10px 0 0;
+        line-height: 1.7em; }
+      header nav .nav-container > ul li:hover > div ul {
+        padding: 0; }
+      header nav .nav-container > ul li:hover > div ul a {
+        color: #000;
+        font-size: .8em;
+        padding: 5px;
+        line-height: 1.7em;
+        display: block; }
+    header nav .nav-container > .input-group {
+      display: none; }
+      @media (min-width: 768px) {
+        header nav .nav-container > .input-group {
+          display: inline-block;
+          width: 20%; }
+          header nav .nav-container > .input-group > input {
+            width: 95%;
+            height: 2.3em; }
+            header nav .nav-container > .input-group > input::placeholder {
+              color: #0abbff;
+              font-size: 1.2em; }
+          header nav .nav-container > .input-group button.input-group-btn {
+            border: none;
+            display: inline-block;
+            height: 100%;
+            margin: 0 0 0 -40px;
+            background: #fff;
+            font-size: 1.2em;
+            color: #0abbff; } }
+
+.hero-image {
+  width: 100%;
+  margin-top: 10px;
+  z-index: 0; }
+  .hero-image img {
+    vertical-align: top;
+    height: 60vh;
+    width: 100vw;
+    filter: hue-rotate(190deg) drop-shadow(0px 16px 10px rgba(20, 20, 20, 0.5)); }
+    @media (min-width: 1300px) {
+      .hero-image img {
+        height: 80vh; } }
 
 main {
   max-width: 1200px;

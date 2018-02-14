@@ -23,21 +23,31 @@
 		<span class="close">&times;</span>
 	</div>
 	<header>
-		<div class="logo-container">
-			<h2 class="brand-logo"><i class="fas fa-bomb"></i> Bomber Skate Shop</h2>
-		</div>
-		<div class="promos-container">
-			<div class="promo-block">
-				<p class="promo-title">Free Shipping</p>
-				<p class="promo-text">On orders $50+ ($3.95 otherwise)</p>
+		<div class="logo-promos-container">
+			<div class="logo-container">
+				<h2 class="brand-logo"><i class="fas fa-bomb"></i> Bomber Skate Shop</h2>
 			</div>
-			<div class="promo-block">
-				<p class="promo-title">Free Returns</p>
-				<p class="promo-text">On Shoes, Clothing, and Accessories</p>
+			<div class="promos-container">
+				<div class="promo-block">
+					<p class="promo-title">Free Shipping</p>
+					<p class="promo-text">On orders $50+ ($3.95 otherwise)</p>
+				</div>
+				<div class="promo-block">
+					<p class="promo-title">Free Returns</p>
+					<p class="promo-text">On Shoes, Clothing, and Accessories</p>
+				</div>
+				<div class="promo-block">
+					<p class="promo-title">No Sales Tax</p>
+					<p class="promo-text">On Anything!</p>
+				</div>
 			</div>
-			<div class="promo-block">
-				<p class="promo-title">No Sales Tax</p>
-				<p class="promo-text">On Anything!</p>
+			<div class="cart-account-info">
+				<ul>
+					<li><i class="fas fa-shopping-cart"></i></li>
+					<li><i class="fas fa-shopping-cart"></i></li>
+					<li><i class="fas fa-shopping-cart"></i></li>
+					<li><i class="fas fa-shopping-cart"></i></li>
+				</ul>
 			</div>
 		</div>
 		<nav>
@@ -92,10 +102,13 @@
 		</nav> <!-- nav -->
 	</header> <!-- header -->
 	
+	<div class="hero-image">
+		<a href="#">
+			<img src="../skate-images/Hero/hip_flip.JPG" alt="">
+		</a>
+	</div>
 	<main>
-	
-		<div class="hero-image"></div>
-	
+		
 		<div class="product-list">
 			<h3>Most Popular Categories</h3>
 			<ul>
