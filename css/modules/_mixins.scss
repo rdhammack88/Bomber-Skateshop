@@ -47,14 +47,21 @@
 
 @mixin imagegrid($qty, $margin) {
 	width: ((100% - (($qty - 1) * $margin)) / $qty);
+	margin-top: $margin;
+	
+	&:nth-child(#{$qty}n-1) {
+		border-left: 1px solid #222;
+		border-right: 1px solid #222;
+		border-width: 2px;
+	}
 	
 	&:nth-child(n) {
 		margin-right: $margin;
-		margin-bottom: $margin/2; // * 3;
+		margin-bottom: $margin*2; ///2; // * 3;
 	}
 	
 	&:nth-child(#{$qty}n) {
 		margin-right: 0;
-		margin-bottom: $margin/2; // * 3;
+		//margin-bottom: $margin/2; // * 3;
 	}
 }

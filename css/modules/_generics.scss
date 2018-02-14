@@ -1,17 +1,28 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-size: 100%;
+	overflow-x: hidden;
+	font : {
+		size: 100%;
+		family: Ariel, sans-serif;
+	}
 //	position: relative;
 }
 
 h2 {
 	width: 100%;
-	max-width: 1200px;
+	height: 100%;
+//	max-width: 1200px;
 	margin: 0 auto;
+	padding:  15px 15px 15px; // 5.4%;
+	color: lighten($blue, 20%);
+//	display: table-cell;
+//	vertical-align: baseline;
+//	padding: 0;
 //	padding: 10px;
 }
 
 ul {
 	list-style: none;
+	padding-left: 0;
 }
