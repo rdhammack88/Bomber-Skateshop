@@ -163,8 +163,7 @@ header {
         header nav .nav-container > .input-group {
           display: inline-block;
           width: 20%;
-          height: 100%;
-          float: right; }
+          height: 100%; }
           header nav .nav-container > .input-group > input {
             width: 95%;
             height: 2.8em; }
