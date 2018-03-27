@@ -4,6 +4,7 @@ header {
 		height: 65px;
 		width: 100%;
 		margin: 0 auto;
+		padding: 10px 0;
 		max-width: 1200px;
 		text-align: center;
 	}
@@ -33,8 +34,8 @@ header {
 				text-align: center;
 				
 				font: {
-//					size: 1.1em;
-					weight: 600;
+					size: .8em;
+					weight: 800;
 				}
 			}
 
@@ -48,7 +49,7 @@ header {
 		}
 	}
 	
-	.cart-account-info {
+	.account-info {
 		float: left;
 		margin-left: 50px;
 		
@@ -59,8 +60,19 @@ header {
 				list-style: none;
 				display: inline-block;
 				color: lighten($blue, 20%);
-				font-size: 1.1em;
+				font-size: 1.3rem;
 				padding: 12px 5px;
+				
+				> .cart-total {
+					color: #000;
+					font-size: .8rem;
+					vertical-align: top;
+					
+					#cart-item-total {
+						font-size: .9rem;
+						vertical-align: top;
+					}
+				}
 			}
 		}
 	}

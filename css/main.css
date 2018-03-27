@@ -12,8 +12,11 @@ h2 {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  padding: 15px 0 15px 7px;
-  color: #0abbff; }
+  padding: 20px 0 15px 7px;
+  color: #0abbff;
+  letter-spacing: 1px;
+  transform: rotateZ(-4deg);
+  transform-origin: left; }
 
 ul {
   list-style: none;
@@ -53,12 +56,17 @@ ul {
   max-width: 1200px;
   margin: 0 auto; }
 
+.brand-logo > a {
+  color: inherit;
+  text-decoration: none; }
+
 header {
   /* Navigation Styles */ }
   header .logo-promos-container {
     height: 65px;
     width: 100%;
     margin: 0 auto;
+    padding: 10px 0;
     max-width: 1200px;
     text-align: center; }
   header .logo-container {
@@ -78,24 +86,32 @@ header {
         text-transform: uppercase;
         margin-bottom: 0;
         text-align: center;
-        font-weight: 600; }
+        font-size: .8em;
+        font-weight: 800; }
       header .promos-container .promo-block .promo-text {
         margin-top: 1px;
         padding: 0;
         color: #777;
         font-size: .8em;
         text-align: center; }
-  header .cart-account-info {
+  header .account-info {
     float: left;
     margin-left: 50px; }
-    header .cart-account-info > ul {
+    header .account-info > ul {
       padding-left: 0; }
-      header .cart-account-info > ul > li {
+      header .account-info > ul > li {
         list-style: none;
         display: inline-block;
         color: #0abbff;
-        font-size: 1.1em;
+        font-size: 1.3rem;
         padding: 12px 5px; }
+        header .account-info > ul > li > .cart-total {
+          color: #000;
+          font-size: .8rem;
+          vertical-align: top; }
+          header .account-info > ul > li > .cart-total #cart-item-total {
+            font-size: .9rem;
+            vertical-align: top; }
   header nav {
     width: 100%;
     height: 65px;
@@ -185,9 +201,9 @@ header {
   z-index: 0; }
   .hero-image img {
     vertical-align: top;
-    height: 60vh;
+    height: 50vh;
     width: 100vw;
-    filter: hue-rotate(190deg); }
+    filter: grayscale(0.7) hue-rotate(260deg) drop-shadow(0px 16px 10px rgba(20, 20, 20, 0.5)); }
     @media (min-width: 1300px) {
       .hero-image img {
         height: 80vh; } }
@@ -234,5 +250,9 @@ main {
           font-weight: 600;
           text-align: center;
           text-transform: uppercase; }
+
+#bss-map {
+  width: 200px;
+  height: 200px; }
 
 /*# sourceMappingURL=main.css.map */

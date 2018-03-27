@@ -1,11 +1,12 @@
+<?php $page_title = isset($page_title) ? $page_title : 'Home'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Bomber Skateboard Shop</title>
+	<title>Bomber Skateboard Shop - <?php echo $page_title; ?></title>
 	
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="<?php echo WWW_ROOT; ?>/css/main.css">
 </head>
 <body>
 
@@ -17,6 +18,8 @@
 			</div>
 		</div>
     </noscript>
+<!-- TEST PHP GOES HERE -->
+<?php //echo SITE_ROOT; ?>
 
 	<div class="branding-ad">
 		<p>Branding Content Goes Here!</p>
@@ -25,7 +28,7 @@
 	<header>
 		<div class="logo-promos-container">
 			<div class="logo-container">
-				<h2 class="brand-logo"><i class="fas fa-bomb"></i> Bomber Skate Shop</h2>
+				<h2 class="brand-logo"><a href="./index.php"><i class="fas fa-bomb"></i> Bomber Skate Shop</a></h2>
 			</div>
 			<div class="promos-container">
 				<div class="promo-block">
@@ -41,19 +44,19 @@
 					<p class="promo-text">On Anything!</p>
 				</div>
 			</div>
-			<div class="cart-account-info">
+			<div class="account-info">
 				<ul>
 					<li><i class="fas fa-shopping-cart"></i></li>
 					<li><i class="fas fa-shopping-cart"></i></li>
 					<li><i class="fas fa-shopping-cart"></i></li>
-					<li><i class="fas fa-shopping-cart"></i></li>
+					<li><i class="fas fa-shopping-cart"></i> <span class="cart-total">{<span id="cart-item-total">0</span>}</span></li>
 				</ul>
 			</div>
 		</div>
 		<nav>
 			<div class="nav-container">
 				<ul>
-					<li><a href="index.php"><span>Home</span></a></li>
+					<li><a href="../index.php"><span>Home</span></a></li>
 					<li>
 						<a href="#"><span>Skate</span></a>
 						<div id="skate-product-links">
@@ -85,9 +88,9 @@
 							</ul>
 						</div>				
 					</li> <!-- Clothing list item -->
-					<li><a href="accessories.php"><span>Accessories</span></a></li>
-					<li><a href="brands.php"><span>Brands</span></a></li>
-					<li><a href="sale.php"><span>Sale</span></a></li>
+					<li><a href="<?php echo WWW_ROOT; ?>/product/accessories.php"><span>Accessories</span></a></li>
+					<li><a href="<?php echo WWW_ROOT; ?>/product/brands.php"><span>Brands</span></a></li>
+					<li><a href="<?php echo WWW_ROOT; ?>/product/sale.php"><span>Sale</span></a></li>
 <!--
 					<li><a href="affiliate.php">Affiliates</a></li>
 					<li><a href="about.php">About Us</a></li>
