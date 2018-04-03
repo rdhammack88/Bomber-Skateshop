@@ -6,7 +6,7 @@
 			<img src="skate-images/Hero/hip_flip.JPG" alt="">
 		</a>
 	</div>
-	<main>
+	<main id="content">
 		
 		<div class="product-list">
 			<h3>Most Popular Categories</h3>

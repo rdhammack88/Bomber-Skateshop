@@ -48,7 +48,7 @@
 				<ul>
 					<li><i class="fas fa-shopping-cart"></i></li>
 					<li><i class="fas fa-shopping-cart"></i></li>
-					<li><i class="fas fa-shopping-cart"></i></li>
+					<li><i class="fas fa-gift"></i></li>
 					<li><i class="fas fa-shopping-cart"></i> <span class="cart-total">{<span id="cart-item-total">0</span>}</span></li>
 				</ul>
 			</div>
@@ -56,21 +56,22 @@
 		<nav>
 			<div class="nav-container">
 				<ul>
-					<li><a href="../index.php"><span>Home</span></a></li>
+					<a href="#content" aria-hidden='true'></a>
+					<li><a href="<?php echo WWW_ROOT; ?>/index.php"><span>Home</span></a></li>
 					<li>
 						<a href="#"><span>Skate</span></a>
 						<div id="skate-product-links">
 							<h5>Skateboard Setup</h5>
 							<ul>
-								<a href="?cat=complete"><li>Completes</li></a>
-								<a href="?cat=decks"><li>Decks</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=complete"><li>Completes</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=decks"><li>Decks</li></a>
 							</ul>
 							<h5>Skateboard Components</h5>
 							<ul>
-								<a href="?cat=wheels"><li>Wheels</li></a>
-								<a href="?cat=axles"><li>Trucks</li></a>
-								<a href="?cat=bearings"><li>Bearings</li></a>
-								<a href="?cat=hardware"><li>Hardware</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=wheels"><li>Wheels</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=axles"><li>Trucks</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=bearings"><li>Bearings</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=hardware"><li>Hardware</li></a>
 							</ul>
 						</div>				
 					</li> <!-- Skate list item -->
@@ -78,13 +79,13 @@
 						<a href="#"><span>Clothing</span></a>
 						<div id="skate-clothing-links">
 							<ul>
-								<a href="?cat=shop_all"><li>Shop All</li></a>
-								<a href="?cat=jackets"><li>Jackets</li></a>
-								<a href="?cat=shirts"><li>Shirts</li></a>
-								<a href="?cat=pants"><li>Pants</li></a>
-								<a href="?cat=belts"><li>Belts</li></a>
-								<a href="?cat=socks"><li>Socks</li></a>
-								<a href="?cat=shoes"><li>Shoes</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=shop_all"><li>Shop All</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=jackets"><li>Jackets</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=shirts"><li>Shirts</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=pants"><li>Pants</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=belts"><li>Belts</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=socks"><li>Socks</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=shoes"><li>Shoes</li></a>
 							</ul>
 						</div>				
 					</li> <!-- Clothing list item -->

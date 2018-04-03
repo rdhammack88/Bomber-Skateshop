@@ -3,6 +3,7 @@
 @import "modules/_generics";
 @import "modules/_custom_classes";
 @import "modules/_header";
+@import "modules/_footer";
 
 .hero-image {
 //	height: 1000px;
@@ -79,6 +80,20 @@ main {
 }
 
 #bss-map {
-	width: 200px;
-	height: 200px;
+	width: 50%;
+	height: 50%;
+	min-height: 400px;
+	margin: 0 auto;
+}
+
+#storeInfo {
+	text-align: center;
+	margin: 50px auto 50px;
+	min-height: 120px;
+//	float: left;
+//	@include clearfix();
+	
+	p {
+		margin: 2px;
+	}
 }

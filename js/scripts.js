@@ -1,4 +1,17 @@
 var gMapAPIKey = 'AIzaSyBTlimL7hbG2VRKxmHD_f3xqd5EcRzNXJI';
+var map;
+
+function showInfo(location, address, contact) {
+	var hours = '9am - 9pm';
+	var storeName = 'Bomber Skateboard Shop - ' + location;
+	var storeAddress = address;
+	var contact = contact;
+	document.getElementById('storeHours').innerHTML = hours;
+	document.getElementById('storeName').innerHTML = storeName;
+	document.getElementById('storeAddress').innerHTML = storeAddress;
+	document.getElementById('storeContact').innerHTML = contact;
+	
+}
 
 function Markers(coords, map, title) {
 //	this.coords = coords;
@@ -19,12 +32,15 @@ Markers.prototype.showInfo = function(store, map, marker) {
 
 
 function initMap() {
-	var storeInformation = 'Bomber Skate Shop<br>932 Russel Rd<br>Everman, Tx 76140';
-	var shopLocation = {lat: 32.6296109, lng: -97.2960488};
-	var map = new google.maps.Map(document.getElementById('bss-map'), {
+	var storeOneInformation = 'Bomber Skate Shop<br>932 Russel Rd<br>Everman, Tx 76140';
+	var storeTwoInformation = 'Bomber Skate Shop<br>416 Kennedy Dr<br>Crowley, Tx 76036';
+	var shopOneLocation = {lat: 32.6296109, lng: -97.2960488};
+	var shopTwoLocation = {lat: 32.5844943, lng: -97.3353952};
+	var shopCentralLocation = {lat: 32.61399632177125, lng: -97.3189157078125};
+	map = new google.maps.Map(document.getElementById('bss-map'), {
 //		center: {lat: 32.6296109, lng: -97.2960488},
-		center: shopLocation,
-		zoom: 11,
+		center: shopCentralLocation,
+		zoom: 12,
 		maxZoom: 15,
 		mapTypeId: google.maps.MapTypeId.ROADMAP,
 		mapTypeControl: false,
@@ -34,22 +50,41 @@ function initMap() {
 		streetViewControl: false
 	});
 	
-	var marker = new Markers({lat: 32.6296109, lng: -97.2960488}, map, 'Bomber Skate Shop');
+//	var marker = new Markers({lat: 32.6296109, lng: -97.2960488}, map, 'Bomber Skate Shop');
 	
-	var marker = new google.maps.Marker({
-		position: shopLocation,
+	var shopOneMarker = new google.maps.Marker({
+		position: shopOneLocation,
 		map: map,
 		title: 'Bomber Skate Shop'
 	});
 	
-	var storeInfo = new google.maps.InfoWindow({
-		content: storeInformation
+	var shopTwoMarker = new google.maps.Marker({
+		position: shopTwoLocation,
+		map: map,
+		title: 'Bomber Skate Shop'
 	});
+	
+	var storeOneInfo = new google.maps.InfoWindow({
+		content: storeOneInformation
+	});
+	var storeTwoInfo = new google.maps.InfoWindow({
+		content: storeTwoInformation
+	});
+	
 	
 //	marker.showInfo(storeInfo, map, marker);
 	
-	marker.addListener('click', function() {
-		storeInfo.open(map, marker);
+	shopOneMarker.addListener('click', function() {
+		storeOneInfo.open(map, shopOneMarker);
+		var address = storeOneInformation.substr(storeOneInformation.indexOf('p')+5);
+		var location = 'Everman';
+		showInfo(location, address, '817-293-1234');
+	});
+	shopTwoMarker.addListener('click', function() {
+		storeTwoInfo.open(map, shopTwoMarker);
+		var address = storeTwoInformation.substr(storeTwoInformation.indexOf('p')+5);
+		var location = 'Crowley';
+		showInfo(location, address, '817-297-1234');
 	});
 }
 

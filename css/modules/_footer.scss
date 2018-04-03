@@ -1,0 +1,25 @@
+footer {
+	background: lighten($blue, 20%);
+	margin-top: 120px;
+	@include clearfix();
+	ul {		
+		> li {
+			display: inline-block;
+			
+			& :not(last) {
+				margin-right: 20px;
+			}
+			
+			> a {
+				color: #eee;
+				font-size: 1.1em;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+			}
+		}
+	}
+	
+	
+	
+}
