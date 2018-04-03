@@ -1,10 +1,14 @@
 footer {
+	position: relative;
+	bottom: 90px;
 	background: lighten($blue, 20%);
 	margin-top: 120px;
+	margin-bottom: 90px;
 	@include clearfix();
 	ul {		
 		> li {
 			display: inline-block;
+			padding: 0 15px;
 			
 			& :not(last) {
 				margin-right: 20px;
@@ -18,8 +22,6 @@ footer {
 				text-decoration: none;
 			}
 		}
-	}
-	
-	
+	}	
 	
 }

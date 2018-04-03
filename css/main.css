@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Bree+Serif|Josefin+Sans|Josefin+Slab|Merriweather|Oswald|Roboto+Slab");
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Caveat+Brush|Cinzel|Gloria+Hallelujah|Indie+Flower|Kaushan+Script|Lobster|Luckiest+Guy|Permanent+Marker|Philosopher|Playfair+Display+SC");
 body {
+  height: 100vh;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -105,6 +106,11 @@ header {
         color: #0abbff;
         font-size: 1.3rem;
         padding: 12px 5px; }
+        header .account-info > ul > li + span {
+          color: #888;
+          font-size: 2.4em;
+          font-weight: lighter;
+          vertical-align: top; }
         header .account-info > ul > li > .cart-total {
           color: #000;
           font-size: .8rem;
@@ -196,15 +202,19 @@ header {
             color: #0abbff; } }
 
 footer {
+  position: relative;
+  bottom: 90px;
   background: #0abbff;
-  margin-top: 120px; }
+  margin-top: 120px;
+  margin-bottom: 90px; }
   footer:before, footer:after {
     content: '';
     display: table; }
   footer:after {
     clear: both; }
   footer ul > li {
-    display: inline-block; }
+    display: inline-block;
+    padding: 0 15px; }
     footer ul > li :not(last) {
       margin-right: 20px; }
     footer ul > li > a {
