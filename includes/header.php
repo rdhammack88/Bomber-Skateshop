@@ -90,8 +90,10 @@
 							</ul>
 						</div>				
 					</li> <!-- Clothing list item -->
+<!--
 					<li><a href="<?php echo WWW_ROOT; ?>/product/accessories.php"><span>Accessories</span></a></li>
 					<li><a href="<?php echo WWW_ROOT; ?>/product/brands.php"><span>Brands</span></a></li>
+-->
 					<li><a href="<?php echo WWW_ROOT; ?>/product/sale.php"><span>Sale</span></a></li>
 <!--
 					<li><a href="affiliate.php">Affiliates</a></li>
@@ -106,3 +108,11 @@
 			</div> <!-- .nav-container -->
 		</nav> <!-- nav -->
 	</header> <!-- header -->
+	
+
+
+<?php if(strpos($page_title, 'home') !== false) : ?>
+		
+	<p><a href="">Home > </a><?php echo $page_dir; ?></p>
+	
+<?php endif;?>

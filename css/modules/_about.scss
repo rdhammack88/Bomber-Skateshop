@@ -1,0 +1,49 @@
+main {
+	#about-content {
+		padding: 30px 20px;
+		.about-column {
+			
+			@include break(1500px) {
+				height: 500px;
+			}
+			
+			> div {
+				height: 100%;
+				@include break(768px) {
+					width: 48%;
+					display: inline-block;
+					
+				}
+				
+			
+
+				&.about-description {
+					height: 100%;
+					padding: 45px 20px;
+					box-sizing: border-box;
+					vertical-align: top;
+					
+					> p {
+						padding: 5px 8px;
+					}
+				}
+
+				&.about-image {
+
+					img {
+						width: 100%;
+						max-height: 325px;
+//						height: 350px;
+						
+						filter: opacity(.7);
+
+						@include break(768px) {
+//							height: 100%;/**/
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

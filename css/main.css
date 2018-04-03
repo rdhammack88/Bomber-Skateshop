@@ -76,7 +76,19 @@ header {
     margin-right: 20px; }
   header .promos-container {
     float: left;
-    height: 100%; }
+    height: 100%;
+    display: none; }
+    @media (min-width: 768px) {
+      header .promos-container {
+        display: block; }
+        header .promos-container .promo-block p:nth-of-type(2) {
+          width: 70%;
+          margin: 0 auto; } }
+    @media (min-width: 1150px) {
+      header .promos-container {
+        display: block; }
+        header .promos-container .promo-block p:nth-of-type(2) {
+          width: 100%; } }
     header .promos-container .promo-block {
       float: left; }
       header .promos-container .promo-block:nth-of-type(2) {
@@ -116,7 +128,7 @@ header {
           font-size: .8rem;
           vertical-align: top; }
           header .account-info > ul > li > .cart-total #cart-item-total {
-            font-size: .9rem;
+            font-size: 1rem;
             vertical-align: top; }
   header nav {
     width: 100%;
@@ -127,11 +139,14 @@ header {
       clear: both; }
     header nav .nav-container > ul {
       display: inline-block;
-      width: 75%;
+      width: 100%;
       height: 100%;
       float: left;
       margin: 0;
       padding: 0 0 0; }
+      @media (min-width: 768px) {
+        header nav .nav-container > ul {
+          width: 75%; } }
     header nav .nav-container > ul li {
       display: inline-block;
       padding: 0 15px;
@@ -206,7 +221,7 @@ footer {
   position: relative;
   background: #0abbff;
   margin-top: 120px;
-  margin-bottom: 90px; }
+  margin-bottom: 60px; }
   footer:before, footer:after {
     content: '';
     display: table; }
@@ -226,6 +241,32 @@ footer {
         text-transform: uppercase;
         text-decoration: none; }
 
+main #about-content {
+  padding: 30px 20px; }
+  @media (min-width: 1500px) {
+    main #about-content .about-column {
+      height: 500px; } }
+  main #about-content .about-column > div {
+    height: 100%; }
+    @media (min-width: 768px) {
+      main #about-content .about-column > div {
+        width: 48%;
+        display: inline-block; } }
+    main #about-content .about-column > div.about-description {
+      height: 100%;
+      padding: 45px 20px;
+      box-sizing: border-box;
+      vertical-align: top; }
+      main #about-content .about-column > div.about-description > p {
+        padding: 5px 8px; }
+    main #about-content .about-column > div.about-image img {
+      width: 100%;
+      max-height: 325px;
+      filter: opacity(0.7); }
+      @media (min-width: 768px) {
+        main #about-content .about-column > div.about-image img {
+          width: 100%; } }
+
 .hero-image {
   width: 100%;
   margin-top: 10px;
@@ -240,6 +281,7 @@ footer {
         height: 80vh; } }
 
 main {
+  min-height: 500px;
   max-width: 1200px;
   margin: 0 auto; }
   main > .product-list {

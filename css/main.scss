@@ -4,6 +4,7 @@
 @import "modules/_custom_classes";
 @import "modules/_header";
 @import "modules/_footer";
+@import "modules/_about";
 
 .hero-image {
 //	height: 1000px;
@@ -26,6 +27,7 @@
 }
 
 main {
+	min-height: 500px;
 	max-width: 1200px;
 	margin: 0 auto;
 		

@@ -32,19 +32,19 @@
 				<li>
 					<a href="?cat=trucks">
 						<img src="skate-images/Trucks/venture-og-awake.jpg" alt="Skate Shoes">
-						<span>Shoes</span>
+						<span>Trucks</span>
 					</a>
 				</li>
 				<li>
 					<a href="?cat=shirts">
 						<img src="skate-images/Clothing/T-Shirts/skate-eat-sleep-repeat.jpg" alt="Skate Decks">
-						<span>Decks</span>
+						<span>T-Shirts</span>
 					</a>
 				</li>
 				<li>
 					<a href="?cat=hoodies">
 						<img src="skate-images/Clothing/Cold-Wear/Function-Skateboarding_Panda_Black.jpg" alt="Skate Wheels">
-						<span>Wheels</span>
+						<span>Hoodies/Jackets</span>
 					</a>
 				</li>
 			</ul>
