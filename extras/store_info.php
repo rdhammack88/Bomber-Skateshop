@@ -1,3 +1,4 @@
+<?php $page_title = 'Find a store'; ?>
 <?php require_once('../includes/init.php'); ?>
 <?php require_once(SITE_ROOT."/includes/header.php"); ?>
 

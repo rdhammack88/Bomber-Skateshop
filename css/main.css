@@ -163,7 +163,8 @@ header {
       box-shadow: -3px 3px 16px rgba(20, 23, 28, 0.25), 3px 3px 16px rgba(20, 23, 28, 0.25);
       position: absolute;
       top: 100%;
-      left: -100%; }
+      left: 0;
+      right: 100%; }
       header nav .nav-container > ul li:hover > div h5 {
         color: #009bd6;
         margin: 10px 0 0;
@@ -203,7 +204,6 @@ header {
 
 footer {
   position: relative;
-  bottom: 90px;
   background: #0abbff;
   margin-top: 120px;
   margin-bottom: 90px; }
@@ -212,17 +212,19 @@ footer {
     display: table; }
   footer:after {
     clear: both; }
-  footer ul > li {
-    display: inline-block;
-    padding: 0 15px; }
-    footer ul > li :not(last) {
-      margin-right: 20px; }
-    footer ul > li > a {
-      color: #eee;
-      font-size: 1.1em;
-      font-weight: bold;
-      text-transform: uppercase;
-      text-decoration: none; }
+  footer .footer-links {
+    text-align: center; }
+    footer .footer-links ul > li {
+      display: inline-block;
+      padding: 0 15px; }
+      footer .footer-links ul > li :not(last) {
+        margin-right: 20px; }
+      footer .footer-links ul > li > a {
+        color: #eee;
+        font-size: 1em;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none; }
 
 .hero-image {
   width: 100%;

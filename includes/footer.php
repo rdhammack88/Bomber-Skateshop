@@ -3,7 +3,7 @@
 			<ul>
 				<li><a href="<?php echo WWW_ROOT; ?>/index.php">Home</a></li>
 				<li><a href="<?php echo WWW_ROOT; ?>/extras/about.php">About</a></li>
-				<li><a href="<?php echo WWW_ROOT; ?>/extras/contact.php">Contact Support</a></li>
+<!--				<li><a href="<?php echo WWW_ROOT; ?>/extras/contact.php">Support</a></li>-->
 				<li><a href="<?php echo WWW_ROOT; ?>/extras/store_info.php">Find a Store</a></li>
 			</ul>
 		</div>

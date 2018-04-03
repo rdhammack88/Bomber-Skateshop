@@ -153,8 +153,8 @@ header {
 			position: absolute;
 	//		top: 45px;
 			top: 100%;
-			left: -100%;
-	//		left: -100vw;
+			left: 0;
+			right: 100%;
 
 			h5 {
 				color: lighten($blue, 10%);

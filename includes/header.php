@@ -1,4 +1,4 @@
-<?php $page_title = isset($page_title) ? $page_title : 'Home'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
