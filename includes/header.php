@@ -28,7 +28,7 @@
 	<header>
 		<div class="logo-promos-container">
 			<div class="logo-container">
-				<h2 class="brand-logo"><a href="./index.php"><i class="fas fa-bomb"></i> Bomber Skate Shop</a></h2>
+				<h2 class="brand-logo"><a href="<?php echo WWW_ROOT; ?>/"><i class="fas fa-bomb"></i> Bomber Skate Shop</a></h2>
 			</div>
 			<div class="promos-container">
 				<div class="promo-block">
@@ -58,21 +58,21 @@
 			<div class="nav-container">
 				<ul>
 					<a href="#content" aria-hidden='true'></a>
-					<li><a href="<?php echo WWW_ROOT; ?>/index.php"><span>Home</span></a></li>
+					<li><a href="<?php echo WWW_ROOT; ?>/"><span>Home</span></a></li>
 					<li>
 						<a href="#"><span>Skate</span></a>
 						<div id="skate-product-links">
 							<h5>Skateboard Setup</h5>
 							<ul>
-								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=complete"><li>Completes</li></a>
-								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=decks"><li>Decks</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/?cat=complete"><li>Completes</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/?cat=decks"><li>Decks</li></a>
 							</ul>
 							<h5>Skateboard Components</h5>
 							<ul>
-								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=wheels"><li>Wheels</li></a>
-								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=axles"><li>Trucks</li></a>
-								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=bearings"><li>Bearings</li></a>
-								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=hardware"><li>Hardware</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/?cat=wheels"><li>Wheels</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/?cat=axles"><li>Trucks</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/?cat=bearings"><li>Bearings</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/?cat=hardware"><li>Hardware</li></a>
 							</ul>
 						</div>				
 					</li> <!-- Skate list item -->
@@ -80,13 +80,13 @@
 						<a href="#"><span>Clothing</span></a>
 						<div id="skate-clothing-links">
 							<ul>
-								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=shop_all"><li>Shop All</li></a>
-								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=jackets"><li>Jackets</li></a>
-								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=shirts"><li>Shirts</li></a>
-								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=pants"><li>Pants</li></a>
-								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=belts"><li>Belts</li></a>
-								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=socks"><li>Socks</li></a>
-								<a href="<?php echo WWW_ROOT; ?>/product/index.php?cat=shoes"><li>Shoes</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/?cat=shop_all"><li>Shop All</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/?cat=jackets"><li>Jackets</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/?cat=shirts"><li>Shirts</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/?cat=pants"><li>Pants</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/?cat=belts"><li>Belts</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/?cat=socks"><li>Socks</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/?cat=shoes"><li>Shoes</li></a>
 							</ul>
 						</div>				
 					</li> <!-- Clothing list item -->
