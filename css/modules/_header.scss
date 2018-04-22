@@ -19,6 +19,7 @@ header {
 		float: left;
 		height: 100%;
 		display: none;
+		cursor: pointer;
 		
 		@include break(768px) {
 			display: block;
