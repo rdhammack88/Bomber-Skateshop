@@ -1,7 +1,7 @@
 	<footer>
 		<div class="footer-links nav-container">
 			<ul>
-				<li><a href="<?php echo WWW_ROOT; ?>/index.php">Home</a></li>
+				<li><a href="<?php echo WWW_ROOT; ?>/">Home</a></li>
 				<li><a href="<?php echo WWW_ROOT; ?>/extras/about.php">About</a></li>
 <!--				<li><a href="<?php echo WWW_ROOT; ?>/extras/contact.php">Support</a></li>-->
 				<li><a href="<?php echo WWW_ROOT; ?>/extras/store_info.php">Find a Store</a></li>
@@ -17,7 +17,7 @@
 	</script>
 	
 	<!-- Custom Scripts -->
-	<script src="<?php echo WWW_ROOT; ?>/js/scripts.js"></script>
+	<script src="<?php echo WWW_ROOT; ?>/js/scripts.min.js"></script>
 	<!-- Google Maps API Script -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTlimL7hbG2VRKxmHD_f3xqd5EcRzNXJI&callback=initMap"
     async defer></script>
