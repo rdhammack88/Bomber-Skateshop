@@ -95,9 +95,12 @@ $(document).ready(function() {
 		
 //	})();
 	
+	$('.branding-ad').slideDown(1000);
+	
 	$('body').on('click', '.close', function() {
-		$(this).parents('.branding-ad').slideUp();
+		$(this).parents('.branding-ad').slideUp(1000);
 	});
+	
 	
 	
 });
