@@ -12,37 +12,37 @@
 			<h3>Most Popular Categories</h3>
 			<ul>
 				<li>
-					<a href="?cat=shoes">
+					<a href="product/?cat=shoes">
 						<img src="skate-images/Clothing/Shoes/nike_sb_bruin_hyperfeel_canvas_nike_men_s_skateboarding_shoe.jpg" alt="Skate Shoes">
 						<span>Shoes</span>
 					</a>
 				</li>
 				<li>
-					<a href="?cat=decks">
+					<a href="product/?cat=decks">
 						<img src="skate-images/Decks/dgk-josh-kalis-100-pure-skateboard-deck.jpg" alt="Skate Decks">
 						<span>Decks</span>
 					</a>
 				</li>
 				<li>
-					<a href="?cat=wheels">
+					<a href="product/?cat=wheels">
 						<img src="skate-images/Wheels/spitfire-skateboard-wheels.jpg" alt="Skate Wheels">
 						<span>Wheels</span>
 					</a>
 				</li>
 				<li>
-					<a href="?cat=trucks">
+					<a href="product/?cat=trucks">
 						<img src="skate-images/Trucks/venture-og-awake.jpg" alt="Skate Shoes">
 						<span>Trucks</span>
 					</a>
 				</li>
 				<li>
-					<a href="?cat=shirts">
+					<a href="product/?cat=shirts">
 						<img src="skate-images/Clothing/T-Shirts/skate-eat-sleep-repeat.jpg" alt="Skate Decks">
 						<span>T-Shirts</span>
 					</a>
 				</li>
 				<li>
-					<a href="?cat=hoodies">
+					<a href="product/?cat=hoodies">
 						<img src="skate-images/Clothing/Cold-Wear/Function-Skateboarding_Panda_Black.jpg" alt="Skate Wheels">
 						<span>Hoodies/Jackets</span>
 					</a>
