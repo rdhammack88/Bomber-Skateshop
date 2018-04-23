@@ -47,7 +47,7 @@
 			<div class="account-info">
 				<ul>
 <!--					<li><i class="fas fa-map"></i></li>-->
-					<li class="user-account"><a href="/customer/account/login"><i class="fas fa-user"></i></a></li>
+					<li class="user-account"><a href="<?php echo WWW_ROOT; ?>/customer/account/login.php"><i class="fas fa-user"></i></a></li>
 					<li class="gift-card"><a href=""><i class="fas fa-gift"></i></a></li>
 					<li class="user-wishlist"><a href="/customer/account/login"><i class="fas fa-save"></i></a></li> <span>|</span>
 					<li class="shopping-cart"><a href=""><i class="fas fa-shopping-cart"></i> <span class="cart-total">{<span id="cart-item-total">0</span>}</span></a></li>
