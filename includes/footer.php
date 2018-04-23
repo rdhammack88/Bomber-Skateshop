@@ -18,8 +18,11 @@
 	
 	<!-- Custom Scripts -->
 	<script src="<?php echo WWW_ROOT; ?>/js/scripts.min.js"></script>
-	<!-- Google Maps API Script -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTlimL7hbG2VRKxmHD_f3xqd5EcRzNXJI&callback=initMap"
-    async defer></script>
+	
+	<?php if(strpos($page_title, 'store')) { ?>
+		<!-- Google Maps API Script -->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTlimL7hbG2VRKxmHD_f3xqd5EcRzNXJI&callback=initMap"
+		async defer></script>
+	<?php } ?>
 </body>
 </html>

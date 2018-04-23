@@ -60,7 +60,7 @@
 					<a href="#content" aria-hidden='true'></a>
 					<li><a href="<?php echo WWW_ROOT; ?>/"><span>Home</span></a></li>
 					<li>
-						<a href="#"><span>Skate</span></a>
+						<a href="<?php echo WWW_ROOT; ?>/product/?cat=skate"><span>Skate</span></a>
 						<div id="skate-product-links">
 							<h5>Skateboard Setup</h5>
 							<ul>
@@ -77,7 +77,7 @@
 						</div>				
 					</li> <!-- Skate list item -->
 					<li>
-						<a href="#"><span>Clothing</span></a>
+						<a href="<?php echo WWW_ROOT; ?>/product/?cat=clothing"><span>Clothing</span></a>
 						<div id="skate-clothing-links">
 							<ul>
 								<a href="<?php echo WWW_ROOT; ?>/product/?cat=shop_all"><li>Shop All</li></a>
