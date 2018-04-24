@@ -58,5 +58,32 @@
 }
 
 .btn {
+	padding: 10px;
+	font-size: 1em;
+}
+
+.btn-add {
+	background: $blue;// lighten($blue, 30%);
+	color: #eee;
+}
+
+.bread-crumbs {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-left: 20px;
+	font-size: 1em;
+	text-transform: uppercase;
 	
+	> span {
+		display: inline-block;
+		font-size: 1em;
+		margin: 0 15px;
+	}
+	
+	> a {
+		text-decoration: none;
+		color: #000;
+	}
 }

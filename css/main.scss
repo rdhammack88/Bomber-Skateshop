@@ -5,6 +5,7 @@
 @import "modules/_header";
 @import "modules/_footer";
 @import "modules/_about";
+@import "modules/_products";
 
 .hero-image {
 //	height: 1000px;
@@ -27,9 +28,10 @@
 }
 
 main {
+	height: 100vh;
 	min-height: 500px;
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 0 auto 120px;
 		
 	> .product-list {
 //		width: 80%;
