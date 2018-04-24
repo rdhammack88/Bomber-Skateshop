@@ -99,10 +99,33 @@ $(document).ready(function() {
 	if(!sessionStorage.getItem('hideAd')) {
 		$('.branding-ad').slideDown(1000);
 	}
+	
+	if(localStorage.getItem('cartTotal')) {
+		$('#cart-item-total').text(localStorage.getItem('cartTotal'));
+	}
+	
 	/* On click of .branding-ad banner close, hide the banner and keep it hidden for duration of opened session */
 	$('body').on('click', '.close', function() {
 		$(this).parents('.branding-ad').slideUp(1000);
 		sessionStorage.setItem('hideAd', 'true');
+	});
+	
+	
+	$('.btn-add-item').click(function() {
+		var total = parseInt($('#cart-item-total').text());
+//		if(total >= 1) {
+//			var el = document.createElement('span');
+//			el.className = 'empty-shopping-cart';
+//			$('.shopping-cart').append(el);
+//			$('.empty-shopping-cart').text('X');
+//		}
+		$('#cart-item-total').text(++total);
+		localStorage.setItem('cartTotal', total);
+	});
+	
+	$('body').on('click', '.empty-shopping-cart', function() {
+		localStorage.removeItem('cartTotal');
+		$('#cart-item-total').text(0);
 	});
 	
 	
