@@ -94,6 +94,12 @@ header {
 				padding: 12px 5px;
 				cursor: pointer;
 				
+				&.shopping-cart span.empty-shopping-cart {
+					display: inline-block;
+					margin-left: 2px;
+					font-size: .7em;
+					color: #000;
+				}
 				
 				&.user-account:hover::before,
 				&.user-account:hover::after,
