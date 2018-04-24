@@ -19,7 +19,7 @@
 				</li>
 				<li>
 					<a href="product/?cat=decks">
-						<img src="skate-images/Decks/dgk-josh-kalis-100-pure-skateboard-deck.jpg" alt="Skate Decks">
+						<img src="skate-images/Decks/Originals/dgk-josh-kalis-100-pure-skateboard-deck.jpg" alt="Skate Decks">
 						<span>Decks</span>
 					</a>
 				</li>
@@ -30,7 +30,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="product/?cat=trucks">
+					<a href="product/?cat=axles">
 						<img src="skate-images/Trucks/venture-og-awake.jpg" alt="Skate Shoes">
 						<span>Trucks</span>
 					</a>

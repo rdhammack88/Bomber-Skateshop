@@ -16,6 +16,8 @@
 	box-sizing: border-box;
 	float: left;
 	margin-bottom: 120px;
+	
+	@include clearfix();
 	.product-display {
 		display: inline-block;
 		width: calc(70%/3);
