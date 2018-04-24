@@ -95,10 +95,14 @@ $(document).ready(function() {
 		
 //	})();
 	
-	$('.branding-ad').slideDown(1000);
-	
+	/* Check if user has closed .branding-ad banner since current session was opened */
+	if(!sessionStorage.getItem('hideAd')) {
+		$('.branding-ad').slideDown(1000);
+	}
+	/* On click of .branding-ad banner close, hide the banner and keep it hidden for duration of opened session */
 	$('body').on('click', '.close', function() {
 		$(this).parents('.branding-ad').slideUp(1000);
+		sessionStorage.setItem('hideAd', 'true');
 	});
 	
 	
