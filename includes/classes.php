@@ -5,7 +5,8 @@ class Connection {
 	public $server;
 	public $user;
 	public $password;	
-	public $database;	
+	public $database;
+	public $conn;
 	
 	public function __construct($server, $user, $password, $database) {
 		$this->server = $server;
@@ -13,13 +14,17 @@ class Connection {
 		$this->password = $password;	
 		$this->database = $database;
 		
-		$this->conn($this->server, $this->user, $this->password, $this->database);
+		$this->conn = $this->connection($this->server, $this->user, $this->password, $this->database);
+		
+		if($this->conn->connect_errno) {
+			echo "Failed to connect to the Database: " . $this->conn->connect_error;
+		}
 		
 		// Connect to Database
 //		$conn	= mysqli_connect($this->server, $this->user, $this->password, $this->database);
 	}
 	
-	public function conn($server, $user, $password, $database) {
+	public function connection($server, $user, $password, $database) {
 		return mysqli_connect($server, $user, $password, $database);
 	}
 	
@@ -29,6 +34,31 @@ class Connection {
 //	}
 
 }
+
+class Products {
+	
+//	public function __construct($connection) {
+////		$this->conn = $connection
+//	}
+	
+	public function loadAllProducts($conn) {
+		$query = "SELECT *
+				  FROM products";
+		$results = $conn->query($query);
+//		$products = $conn::fetch_assoc($results);
+		return $results;
+		
+	}
+	
+	public function loadProductsByCategory($conn, $cat) {
+		$query = "SELECT *
+				  FROM products
+				  WHERE prod_category = '$cat'";
+		$results = $conn->query($query);
+		return $results;
+	}
+}
+
 
 class User {
 	
@@ -43,6 +73,7 @@ class User {
 	}
 	
 }
+
 
 
 ?>

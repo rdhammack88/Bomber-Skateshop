@@ -47,9 +47,9 @@
 			<div class="account-info">
 				<ul>
 <!--					<li><i class="fas fa-map"></i></li>-->
-					<li class="user-account"><a href="<?php echo WWW_ROOT; ?>/customer/account/login.php"><i class="fas fa-user"></i></a></li>
+					<li class="user-account"><a href="<?php echo WWW_ROOT; ?>/customer/"><i class="fas fa-user"></i></a></li>
 					<li class="gift-card"><a href=""><i class="fas fa-gift"></i></a></li>
-					<li class="user-wishlist"><a href="/customer/account/login"><i class="fas fa-save"></i></a></li> <span>|</span>
+					<li class="user-wishlist"><a href="<?php echo WWW_ROOT; ?>/customer/"><i class="fas fa-save"></i></a></li> <span>|</span>
 					<li class="shopping-cart"><a href=""><i class="fas fa-shopping-cart"></i> <span class="cart-total">{<span id="cart-item-total">0</span>}</span></a></li>
 				</ul>
 			</div>
@@ -62,9 +62,12 @@
 					<li>
 						<a href="<?php echo WWW_ROOT; ?>/product/?cat=skate"><span>Skate</span></a>
 						<div id="skate-product-links">
+							<ul>
+								<a href="<?php echo WWW_ROOT; ?>/product/?cat=shop_all"><li>Shop All</li></a>
+							</ul>
 							<h5>Skateboard Setup</h5>
 							<ul>
-								<a href="<?php echo WWW_ROOT; ?>/product/?cat=complete"><li>Completes</li></a>
+								<a href="<?php echo WWW_ROOT; ?>/product/?cat=completes"><li>Completes</li></a>
 								<a href="<?php echo WWW_ROOT; ?>/product/?cat=decks"><li>Decks</li></a>
 							</ul>
 							<h5>Skateboard Components</h5>
@@ -91,8 +94,8 @@
 						</div>				
 					</li> <!-- Clothing list item -->
 <!--
-					<li><a href="<?php echo WWW_ROOT; ?>/product/accessories.php"><span>Accessories</span></a></li>
-					<li><a href="<?php echo WWW_ROOT; ?>/product/brands.php"><span>Brands</span></a></li>
+					<li><a href="/product/accessories.php"><span>Accessories</span></a></li>
+					<li><a href="/product/brands.php"><span>Brands</span></a></li>
 -->
 					<li><a href="<?php echo WWW_ROOT; ?>/product/sale.php"><span>Sale</span></a></li>
 <!--
@@ -111,8 +114,8 @@
 	
 
 
-<?php if(strpos($page_title, 'home') !== false) : ?>
+<?php if(strpos($page_title, 'Home') === false) : ?>
 		
-	<p><a href="">Home > </a><?php echo $page_dir; ?></p>
+	<p class="bread-crumbs"><a href="<?php echo WWW_ROOT; ?>/">Home</a><span>></span><?php echo $page_title; ?></p> <!-- $page_dir -->
 	
 <?php endif;?>
