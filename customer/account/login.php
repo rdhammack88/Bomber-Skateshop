@@ -5,9 +5,25 @@
 
 
 <main id="content">
-	<?php //echo $page_dir; ?>
-	<br>
-	<?php //echo strrpos(dirname(__FILE__), '\\'); ?>
+	<h2>Login or Create an account!</h2>
+	<div class="loginForm">
+		<h3>Already have an account?</h3>
+		<form action="<?php echo $_SERVER['PHP_SELF']; ?>">
+			<label> <span class="required">*</span> Email:
+				<input type="text" name="email">
+			</label>
+			<label> <span class="required">*</span> Password:
+				<input type="password">
+			</label>
+		</form>
+	</div>
+	
+	<div class="register">
+		<h3>New Customer?</h3>
+		<p>By creating an account with our store, you will be able to move through the checkout process faster, store multiple shipping addresses, view and track your orders in your account and more.</p>
+		<button type="button" class="btn">Register</button>
+	</div>
+	
 </main>
 
 <?php require_once(SITE_ROOT.'/includes/footer.php'); ?>
