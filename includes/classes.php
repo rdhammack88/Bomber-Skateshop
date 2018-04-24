@@ -28,6 +28,10 @@ class Connection {
 		return mysqli_connect($server, $user, $password, $database);
 	}
 	
+	public function close() {
+		return mysqli_close($this->conn);
+	}
+	
 	// Verify Connection to Database
 //	if(!$conn) {
 //		die("Connection to database failed: " . mysqli_connect_error());
@@ -54,6 +58,14 @@ class Products {
 		$query = "SELECT *
 				  FROM products
 				  WHERE prod_category = '$cat'";
+		$results = $conn->query($query);
+		return $results;
+	}
+	
+	public function loadProductById($conn, $product_id) {
+		$query = "SELECT *
+				  FROM products
+				  WHERE prod_id = $product_id";
 		$results = $conn->query($query);
 		return $results;
 	}

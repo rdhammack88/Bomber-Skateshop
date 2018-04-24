@@ -1,3 +1,6 @@
+<?php 
+	$conn->close();
+?>
 	<footer>
 		<div class="footer-links nav-container">
 			<ul>
