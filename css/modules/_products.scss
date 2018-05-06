@@ -1,21 +1,27 @@
 .filter-results {
-	width: 25%;
-	height: 100%;
-	min-height: 300px;
-//	min-width: 150px;
-	max-width: 250px;
+	height: 100px;
 	
-	display: inline-block;
-	float: left;
+	@include break(992px) {
+		width: 25%;
+	//	min-width: 150px;
+		max-width: 250px;
+		min-height: 300px;
+		display: inline-block;
+		float: left;
+	}
+	
 }
 
 .product-container {
-	width: 70%;
-	padding: 0 0 0 5%;
-	display: inline-block;
-	box-sizing: border-box;
-	float: left;
 	margin-bottom: 120px;
+	height: 100vh;
+	box-sizing: border-box;
+	@include break(992px) {
+		width: 70%;
+		padding: 0 0 0 5%;
+		display: inline-block;
+		float: left;
+	}
 	
 //	@include clearfix();
 	.product-display {

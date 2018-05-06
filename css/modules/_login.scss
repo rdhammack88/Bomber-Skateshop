@@ -1,0 +1,37 @@
+#loginHeader {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.loginForm {
+	text-align: center;
+	margin-bottom: 60px;
+	
+	@include break(768px) {
+		width: 45%;
+		height: 300px;
+		border-right: 1px solid #333;
+		float: left;
+	}
+	
+	label {
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+
+.register {
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	
+	
+	@include break(768px) {
+		height: 300px;
+		width: 45%;
+		margin-left: 30px;
+		float: left;
+		text-align: left;
+	}
+}
+

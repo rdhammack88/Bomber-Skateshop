@@ -6,6 +6,7 @@
 @import "modules/_footer";
 @import "modules/_about";
 @import "modules/_products";
+@import "modules/_login";
 
 .hero-image {
 //	height: 1000px;
@@ -24,7 +25,12 @@
 		@include break(1300px) {
 			height: 80vh;
 		}
-	}
+	
+		&.hide {
+			display: none;
+		}
+	
+	}	
 }
 
 main {
