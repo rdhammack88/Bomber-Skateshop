@@ -1,3 +1,4 @@
+/* If the current document is Find a Store, display the map of store locations */
 if(document.title.includes('Find a store')) {
 	var gMapAPIKey = 'AIzaSyBTlimL7hbG2VRKxmHD_f3xqd5EcRzNXJI';
 	var map;
@@ -103,6 +104,26 @@ $(document).ready(function() {
 	if(localStorage.getItem('cartTotal')) {
 		$('#cart-item-total').text(localStorage.getItem('cartTotal'));
 	}
+	
+	
+	
+	
+//	var carousel = setInterval(function() {
+//		if($('.hero-image img.active').attr('src') == $('.hero-image img:last-of-type').attr('src')) {//.next().attr('src') === undefined) {
+//			$('.hero-image img.active').toggleClass('hide', 'active');//.removeClass('active').addClass('hide');
+//			$('.hero-image img:nth-child(1)').toggleClass('hide', 'active');//.removeClass('hide').addClass('active');	
+//		
+//		console.log($('img.active').next());		
+//		}
+//		$('.hero-image img.active').toggleClass('hide', 'active').next('img').toggleClass('hide', 'active');
+//		
+//		//.removeClass('active').addClass('hide')
+//		//.addClass('active').removeClass('hide')
+//		
+////		console.log($('img.active').next());
+//	}, 2000);
+	
+	
 	
 	/* On click of .branding-ad banner close, hide the banner and keep it hidden for duration of opened session */
 	$('body').on('click', '.close', function() {
