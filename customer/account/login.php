@@ -5,7 +5,7 @@
 
 
 <main id="content">
-	<h2>Login or Create an account!</h2>
+	<h2 id="loginHeader">Login or Create an account!</h2>
 	<div class="loginForm">
 		<h3>Already have an account?</h3>
 		<form action="<?php echo $_SERVER['PHP_SELF']; ?>">

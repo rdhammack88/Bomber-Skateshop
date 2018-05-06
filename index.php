@@ -2,9 +2,11 @@
 <?php require_once(SITE_ROOT."/includes/header.php"); ?>
 	
 	<div class="hero-image">
-		<a href="#">
-			<img src="skate-images/Hero/hip_flip.JPG" alt="">
-		</a>
+<!--		<a href="#">-->
+			<img src="skate-images/Hero/hip_flip.JPG" alt="" class="active">
+			<img src="skate-images/Hero/skate.jpg" alt="" class="hide">
+			<img src="skate-images/Hero/skate.jpg" alt="" class="hide">
+<!--		</a>-->
 	</div>
 	<main id="content">
 		
@@ -19,7 +21,7 @@
 				</li>
 				<li>
 					<a href="product/?cat=decks">
-						<img src="skate-images/Decks/Originals/dgk-josh-kalis-100-pure-skateboard-deck.jpg" alt="Skate Decks">
+						<img src="skate-images/Decks/large/dgk-josh-kalis-100-pure-skateboard-deck.jpg" alt="Skate Decks">
 						<span>Decks</span>
 					</a>
 				</li>

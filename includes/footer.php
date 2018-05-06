@@ -1,5 +1,5 @@
 <?php 
-	$conn->close();
+//	$conn->close();
 ?>
 	<footer>
 		<div class="footer-links nav-container">
@@ -20,8 +20,8 @@
 	</script>
 	
 	<!-- Custom Scripts -->
-<!--	<script src="<?php echo WWW_ROOT; ?>/js/scripts.min.js"></script>-->
 	<script src="<?php echo WWW_ROOT; ?>/js/scripts.js"></script>
+<!--	<script src="<?php echo WWW_ROOT; ?>/js/scripts.js"></script>-->
 	
 	<?php if(strpos($page_title, 'store')) { ?>
 		<!-- Google Maps API Script -->
