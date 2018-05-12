@@ -1,6 +1,6 @@
 /* If the current document is Find a Store, display the map of store locations */
 if(document.title.includes('Find a store')) {
-	var gMapAPIKey = 'AIzaSyBTlimL7hbG2VRKxmHD_f3xqd5EcRzNXJI';
+	var gMapAPIKey = '*************************';
 	var map;
 
 	function showInfo(location, address, contact) {
