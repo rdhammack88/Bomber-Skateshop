@@ -81,14 +81,12 @@ header {
     max-width: 1200px;
     text-align: center; }
   header .logo-container {
-    height: 100%;
-    width: 100%;
     margin-right: 20px;
-    margin-top: 45px; }
+    margin-top: 3%; }
     @media (min-width: 1150px) {
       header .logo-container {
         float: left;
-        width: 20%;
+        height: 100%;
         margin-top: 0; } }
     header .logo-container > h2 {
       width: 100%;
@@ -134,159 +132,162 @@ header {
         color: #777;
         font-size: .8em;
         text-align: center; }
-  @media (min-width: 1060px) {
-    header .account-info {
-      float: left;
-      margin-left: 50px; } }
-  header .account-info > ul {
-    padding-left: 0;
-    position: relative; }
-    header .account-info > ul > li {
-      position: relative;
-      list-style: none;
-      display: inline-block;
-      color: #0abbff;
-      font-size: 1.3rem;
-      padding: 12px 5px;
-      cursor: pointer; }
-      header .account-info > ul > li.shopping-cart span.empty-shopping-cart {
+  header .account-info {
+    margin-top: -22px; }
+    @media (min-width: 1060px) {
+      header .account-info {
+        float: left;
+        margin-left: 50px;
+        margin-top: 0; } }
+    header .account-info > ul {
+      padding-left: 0;
+      position: relative; }
+      header .account-info > ul > li {
+        position: relative;
+        list-style: none;
         display: inline-block;
-        margin-left: 2px;
-        font-size: .7em;
-        color: #000; }
-      header .account-info > ul > li.user-account:hover::before, header .account-info > ul > li.user-account:hover::after, header .account-info > ul > li.gift-card:hover::before, header .account-info > ul > li.gift-card:hover::after, header .account-info > ul > li.user-wishlist:hover::before, header .account-info > ul > li.user-wishlist:hover::after, header .account-info > ul > li.shopping-cart:hover::before, header .account-info > ul > li.shopping-cart:hover::after {
-        display: inline-block; }
-      header .account-info > ul > li.user-account::before {
-        position: absolute;
-        z-index: 1;
-        display: none;
-        width: 200px;
-        padding: 10px;
-        font-size: 0.8em;
-        line-height: 1.4em;
-        border-radius: 5px;
-        border: 1px solid #000;
-        background-color: rgba(32, 32, 32, 0.8);
-        color: #eee;
-        content: "My Account";
-        top: calc(100% + 5px);
-        left: 50%;
-        transform: translateX(-50%); }
-      header .account-info > ul > li.gift-card::before {
-        position: absolute;
-        z-index: 1;
-        display: none;
-        width: 200px;
-        padding: 10px;
-        font-size: 0.8em;
-        line-height: 1.4em;
-        border-radius: 5px;
-        border: 1px solid #000;
-        background-color: rgba(32, 32, 32, 0.8);
-        color: #eee;
-        content: "Gift Card";
-        top: calc(100% + 5px);
-        left: 50%;
-        transform: translateX(-50%); }
-      header .account-info > ul > li.user-wishlist::before {
-        position: absolute;
-        z-index: 1;
-        display: none;
-        width: 200px;
-        padding: 10px;
-        font-size: 0.8em;
-        line-height: 1.4em;
-        border-radius: 5px;
-        border: 1px solid #000;
-        background-color: rgba(32, 32, 32, 0.8);
-        color: #eee;
-        content: "Wishlist";
-        top: calc(100% + 5px);
-        left: 50%;
-        transform: translateX(-50%); }
-      header .account-info > ul > li.shopping-cart::before {
-        position: absolute;
-        z-index: 1;
-        display: none;
-        width: 200px;
-        padding: 10px;
-        font-size: 0.8em;
-        line-height: 1.4em;
-        border-radius: 5px;
-        border: 1px solid #000;
-        background-color: rgba(32, 32, 32, 0.8);
-        color: #eee;
-        content: "Shopping Cart";
-        top: calc(100% + 5px);
-        left: 50%;
-        transform: translateX(-50%); }
-      header .account-info > ul > li.user-account::after {
-        position: absolute;
-        z-index: 2;
-        display: none;
-        width: 0;
-        height: 0;
-        border: 5px solid transparent;
-        content: "";
-        top: 100%;
-        left: 50%;
-        border-bottom-color: rgba(0, 0, 0, 0.9);
-        border-top-width: 0;
-        transform: translateX(-50%); }
-      header .account-info > ul > li.gift-card::after {
-        position: absolute;
-        z-index: 2;
-        display: none;
-        width: 0;
-        height: 0;
-        border: 5px solid transparent;
-        content: "";
-        top: 100%;
-        left: 50%;
-        border-bottom-color: rgba(0, 0, 0, 0.9);
-        border-top-width: 0;
-        transform: translateX(-50%); }
-      header .account-info > ul > li.user-wishlist::after {
-        position: absolute;
-        z-index: 2;
-        display: none;
-        width: 0;
-        height: 0;
-        border: 5px solid transparent;
-        content: "";
-        top: 100%;
-        left: 50%;
-        border-bottom-color: rgba(0, 0, 0, 0.9);
-        border-top-width: 0;
-        transform: translateX(-50%); }
-      header .account-info > ul > li.shopping-cart::after {
-        position: absolute;
-        z-index: 2;
-        display: none;
-        width: 0;
-        height: 0;
-        border: 5px solid transparent;
-        content: "";
-        top: 100%;
-        left: 50%;
-        border-bottom-color: rgba(0, 0, 0, 0.9);
-        border-top-width: 0;
-        transform: translateX(-50%); }
-      header .account-info > ul > li > a {
-        text-decoration: none;
-        color: inherit; }
-        header .account-info > ul > li > a > .cart-total {
-          color: #000;
-          font-size: .8rem;
-          vertical-align: top; }
-          header .account-info > ul > li > a > .cart-total #cart-item-total {
-            font-size: 1rem;
+        color: #0abbff;
+        font-size: 1.3rem;
+        padding: 12px 5px;
+        cursor: pointer; }
+        header .account-info > ul > li.shopping-cart span.empty-shopping-cart {
+          display: inline-block;
+          margin-left: 2px;
+          font-size: .7em;
+          color: #000; }
+        header .account-info > ul > li.user-account:hover::before, header .account-info > ul > li.user-account:hover::after, header .account-info > ul > li.gift-card:hover::before, header .account-info > ul > li.gift-card:hover::after, header .account-info > ul > li.user-wishlist:hover::before, header .account-info > ul > li.user-wishlist:hover::after, header .account-info > ul > li.shopping-cart:hover::before, header .account-info > ul > li.shopping-cart:hover::after {
+          display: inline-block; }
+        header .account-info > ul > li.user-account::before {
+          position: absolute;
+          z-index: 1;
+          display: none;
+          width: 200px;
+          padding: 10px;
+          font-size: 0.8em;
+          line-height: 1.4em;
+          border-radius: 5px;
+          border: 1px solid #000;
+          background-color: rgba(32, 32, 32, 0.8);
+          color: #eee;
+          content: "My Account";
+          top: calc(100% + 5px);
+          left: 50%;
+          transform: translateX(-50%); }
+        header .account-info > ul > li.gift-card::before {
+          position: absolute;
+          z-index: 1;
+          display: none;
+          width: 200px;
+          padding: 10px;
+          font-size: 0.8em;
+          line-height: 1.4em;
+          border-radius: 5px;
+          border: 1px solid #000;
+          background-color: rgba(32, 32, 32, 0.8);
+          color: #eee;
+          content: "Gift Card";
+          top: calc(100% + 5px);
+          left: 50%;
+          transform: translateX(-50%); }
+        header .account-info > ul > li.user-wishlist::before {
+          position: absolute;
+          z-index: 1;
+          display: none;
+          width: 200px;
+          padding: 10px;
+          font-size: 0.8em;
+          line-height: 1.4em;
+          border-radius: 5px;
+          border: 1px solid #000;
+          background-color: rgba(32, 32, 32, 0.8);
+          color: #eee;
+          content: "Wishlist";
+          top: calc(100% + 5px);
+          left: 50%;
+          transform: translateX(-50%); }
+        header .account-info > ul > li.shopping-cart::before {
+          position: absolute;
+          z-index: 1;
+          display: none;
+          width: 200px;
+          padding: 10px;
+          font-size: 0.8em;
+          line-height: 1.4em;
+          border-radius: 5px;
+          border: 1px solid #000;
+          background-color: rgba(32, 32, 32, 0.8);
+          color: #eee;
+          content: "Shopping Cart";
+          top: calc(100% + 5px);
+          left: 50%;
+          transform: translateX(-50%); }
+        header .account-info > ul > li.user-account::after {
+          position: absolute;
+          z-index: 2;
+          display: none;
+          width: 0;
+          height: 0;
+          border: 5px solid transparent;
+          content: "";
+          top: 100%;
+          left: 50%;
+          border-bottom-color: rgba(0, 0, 0, 0.9);
+          border-top-width: 0;
+          transform: translateX(-50%); }
+        header .account-info > ul > li.gift-card::after {
+          position: absolute;
+          z-index: 2;
+          display: none;
+          width: 0;
+          height: 0;
+          border: 5px solid transparent;
+          content: "";
+          top: 100%;
+          left: 50%;
+          border-bottom-color: rgba(0, 0, 0, 0.9);
+          border-top-width: 0;
+          transform: translateX(-50%); }
+        header .account-info > ul > li.user-wishlist::after {
+          position: absolute;
+          z-index: 2;
+          display: none;
+          width: 0;
+          height: 0;
+          border: 5px solid transparent;
+          content: "";
+          top: 100%;
+          left: 50%;
+          border-bottom-color: rgba(0, 0, 0, 0.9);
+          border-top-width: 0;
+          transform: translateX(-50%); }
+        header .account-info > ul > li.shopping-cart::after {
+          position: absolute;
+          z-index: 2;
+          display: none;
+          width: 0;
+          height: 0;
+          border: 5px solid transparent;
+          content: "";
+          top: 100%;
+          left: 50%;
+          border-bottom-color: rgba(0, 0, 0, 0.9);
+          border-top-width: 0;
+          transform: translateX(-50%); }
+        header .account-info > ul > li > a {
+          text-decoration: none;
+          color: inherit; }
+          header .account-info > ul > li > a > .cart-total {
+            color: #000;
+            font-size: .8rem;
             vertical-align: top; }
-      header .account-info > ul > li + span {
-        color: #888;
-        font-size: 2.4em;
-        font-weight: 400;
-        vertical-align: top; }
+            header .account-info > ul > li > a > .cart-total #cart-item-total {
+              font-size: 1rem;
+              vertical-align: top; }
+        header .account-info > ul > li + span {
+          color: #888;
+          font-size: 2.4em;
+          font-weight: 400;
+          vertical-align: top; }
   header nav {
     width: 100%;
     height: 65px;

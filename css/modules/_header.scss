@@ -10,14 +10,14 @@ header {
 	}
 	
 	.logo-container	{
-		height: 100%;
-		width: 100%;
+//		width: 100%;
 		margin-right: 20px;
-		margin-top: 45px;
+		margin-top: 3%;
 		
 		@include break(1150px) {
 			float: left;
-			width: 20%;
+			height: 100%;
+//			width: 100%;
 			margin-top: 0;
 		}
 		
@@ -90,10 +90,12 @@ header {
 //		float: right;
 //		clear: both;
 //		margin-bottom: 50px;
+		margin-top: -22px;
 		
 		@include break(1060px) {
 			float: left;
 			margin-left: 50px;
+			margin-top: 0;
 		}
 		
 		> ul {
@@ -309,6 +311,7 @@ header {
 		margin-top: 55px;
 		background-color: lighten($blue, 20%);
 		clear: both;
+//		text-align: center;
 		
 		&::after {
 			clear: both;
@@ -408,6 +411,7 @@ header {
 
 		.nav-container > .input-group {
 			display: none;
+//			display: inline-block;
 			padding: 15px 0 0;
 			height: 100%;
 			box-sizing: border-box;
