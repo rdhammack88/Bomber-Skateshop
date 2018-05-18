@@ -10,14 +10,15 @@ header {
 	}
 	
 	.logo-container	{
-		float: left;
 		height: 100%;
 		width: 100%;
 		margin-right: 20px;
 		margin-top: 45px;
 		
 		@include break(1150px) {
-			width: 10%;
+			float: left;
+			width: 20%;
+			margin-top: 0;
 		}
 		
 		> h2 {
@@ -88,6 +89,7 @@ header {
 	.account-info {
 //		float: right;
 //		clear: both;
+//		margin-bottom: 50px;
 		
 		@include break(1060px) {
 			float: left;
